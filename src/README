@@ -1,0 +1,10 @@
+WHAT I CHANGED:
+1. I fixed the indexing issues that had to do with my move draw, it would add the last of the
+draw pile to the front of the visible instead of adding the first in the invisible
+2. I got rid of the public field in the controller, even though I only used it for testing and it
+never affected any of the other code
+3. I put all my basic klondike implementation into an abstract klondike class, basically setting
+the basic klondike as the default game method and any other model would need to override each method
+as needed.
+4. Added a current state and current score field in the controller, so that I can still output the
+game state after the game is over because before it would just crash
